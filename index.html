@@ -6,18 +6,120 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          colr: '#FF4240',
+        }
+      }
+    }
+  }
+</script>
 
     <title>Hockey</title>
 </head>
 <body>
-    <header>
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl font-semibold">
+                      <li class="hover:text-red-500 duration-300"><a>Home</a></li>
+                      <li class="hover:text-red-500 duration-300"><a>About</a></li>
+                      <li class="hover:text-red-500 duration-300">
+                        <a>Pages</a>
+                      </li class="hover:text-red-500 duration-300">
+                      <li class="hover:text-red-500 duration-300"><a>Blog</a></li>
+                      <li class="hover:text-red-500 duration-300"><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-bold">Hockey<span class="text-red-500">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="hover:text-red-500 duration-300"><a>Home</a></li>
+                    <li class="hover:text-red-500 duration-300"><a>About</a></li>
+                    <li class="hover:text-red-500 duration-300">
+                      <a>Pages</a>
+                    </li class="hover:text-red-500 duration-300">
+                    <li class="hover:text-red-500 duration-300"><a>Blog</a></li>
+                    <li class="hover:text-red-500 duration-300"><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex space-x-5">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <a class="btn bg-error text-white text-lg font-[500]">Get ticket</a>
+                </div>
+              </div>
+        </nav>
+        <div class="relative px-5 lg:px-0">
 
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img
+                src="./Images/1.png"
+                class="w-full" />
+              <div class="absolute bottom-6 lg:left-6 flex space-x-3 left-1/2 justify-between">
+                <a href="#slide4" class="btn btn-circle bg-slate-900 text-white">❮</a>
+                <a href="#slide2" class="btn btn-circle bg-slate-900 text-white">❯</a>
+              </div>
+            </div>
+            <div id="slide1" class="carousel-item relative w-full">
+              <img
+                src="./Images/1.png"
+                class="w-full" />
+              <div class="absolute bottom-6 lg:left-6 flex space-x-3 left-1/2 justify-between">
+                <a href="#slide4" class="btn btn-circle bg-slate-900 text-white">❮</a>
+                <a href="#slide2" class="btn btn-circle bg-slate-900 text-white">❯</a>
+              </div>
+            </div>
+          </div>
+          <div class="lg:absolute bottom-10 right-10 lg:w-1/3 bg-slate-900 py-12 px-6 text-white rounded-md space-y-4">
+            <h4 class="text-2xl font-semibold">Meet all the heroes from the field</h4>
+            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+          </div>
+        </div>
     </header>
-    <main>
+    <main class="container mx-auto sm:px-5">
+      <section class="state mt-24">
+        <div class="border-y-[2px] border-dashed py-12 text-center flex flex-col items-center justify-center">
+          <h3 class="text-4xt font-bold mb-3">Professional hockey club</h3>
+          <p class="opacity-80 w-1/2 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit rem nostrum veniam eaque ducimus saepe nam consectetur corrupti voluptas at?</p>
+        </div>
+        <div class="grid mt-12 grid-cols-1 md:grid-cols-1 lg:grid-cols-4">
+          <div class="flex flex-col">
+            <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
+            <h5>Player</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
 
+        </div>
+      </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
